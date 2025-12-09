@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "college": {
+      "type": "string",
+      "required": true
+    },
+    "course": {
+      "type": "string",
+      "required": true
+    },
+    "submittedOn": {
+      "type": "datetime",
+      "required": true
+    },
+    "certificateStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Not Generated",
+        "Generated",
+        "Downloaded"
+      ],
+      "default": "Not Generated",
+      "required": true
+    },
+    "program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program.program",
+      "inversedBy": "students"
+    }
+  }
+}

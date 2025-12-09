@@ -1,0 +1,35 @@
+{
+  "name": "radial-code-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application for Radial Code admin portal",
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.25.9",
+    "@strapi/plugin-users-permissions": "4.25.9",
+    "@strapi/strapi": "4.25.9",
+    "pg": "^8.16.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "sharp": "^0.34.5",
+    "sqlite3": "^5.1.7",
+    "styled-components": "^5.3.11"
+  },
+  "author": {
+    "name": "Radial Code Team"
+  },
+  "strapi": {
+    "uuid": "radial-code-backend"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
